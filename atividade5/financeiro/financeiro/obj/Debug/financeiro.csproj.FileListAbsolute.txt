@@ -1,0 +1,10 @@
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\bin\Debug\financeiro.exe.config
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\bin\Debug\financeiro.exe
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\bin\Debug\financeiro.pdb
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\obj\Debug\financeiro.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\obj\Debug\financeiro.Form1.resources
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\obj\Debug\financeiro.Properties.Resources.resources
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\obj\Debug\financeiro.csproj.GenerateResource.cache
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\obj\Debug\financeiro.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\obj\Debug\financeiro.exe
+C:\Users\Nicolas\Documents\fatec\LP2\atividade5\financeiro\financeiro\obj\Debug\financeiro.pdb
