@@ -34,6 +34,23 @@ namespace financeiro
                 MessageBox.Show("nome obrigatório");
                 txtNome.Focus();
             }
+            for (int i = 0; i < txtNome.Text.Length; i++)
+            {
+                if ((txtNome.Text[i] < 'A' || txtNome.Text[i] > 'Z') && (txtNome.Text[i] < 'a' || txtNome.Text[i] > 'z') && txtNome.Text[i] != 32)
+                {
+                    MessageBox.Show("Nome inválido");
+                    txtNome.Focus();
+                    break;
+                }
+            }
+            /*bool validade=true;
+            if (txtNome.Text.All(char.IsLetter) && txtNome.Text.All(char.IsWhiteSpace))
+            {
+                MessageBox.Show("nome inválido");
+                txtNome.Focus();
+                validade = false;
+
+            }*/
         }
 
         private void Form1_Load(object sender, EventArgs e)
