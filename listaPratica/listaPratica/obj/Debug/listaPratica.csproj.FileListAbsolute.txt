@@ -1,0 +1,15 @@
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\bin\Debug\listaPratica.exe.config
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\bin\Debug\listaPratica.exe
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\bin\Debug\listaPratica.pdb
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.Main.resources
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.Properties.Resources.resources
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.csproj.GenerateResource.cache
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.exe
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.pdb
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.fracao36.resources
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.array37.resources
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.matriz38.resources
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.emprego39.resources
+C:\Users\Nicolas\Documents\fatec\listaPratica\listaPratica\obj\Debug\listaPratica.conversao40.resources
