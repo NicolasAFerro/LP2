@@ -1,0 +1,45 @@
+Prova Denilce 
+
+
+string num = "600";
+byte num2;
+if (Byte.TryParse(num, out num2))
+{
+MessageBox.Show("Conversão ok");
+}
+else
+{
+MessageBox.Show("Problema na conversão");
+} 
+
+int[] numeros2 = new int[3] { 10, 20, 30 }; // OBJETO
+int[] numeros3 = new int[] { 10, 20, 30 }; // OBJETO
+int[] numeros4 = { 10, 20, 30 }; // FORMA LITERAL
+string[] sema 
+
+Matriz de duas dimensões
+int[,] arrInt = new int[2,2] ; Inicializando o array:
+int[,] arrInt = new int[2,2] {{0,0},{0,1}}
+int[,] arrInt = { { 0, 0 }, { 0, 1 } };
+int[,] arrInt = new int[,]{{0,0}, {0, 1}};
+ Para obtermos o último elemento:
+int numero = arrInt[1,1];  irá voltar 1
+double[,] retangulo = new double[5,10]; 
+
+
+
+
+
+ No menu Project selecione Add Reference. (ou Projeto/Adicionar Referência)
+
+ No item Assemblies\Framework selecione a caixa Microsoft.VisualBasic e clique em OK 
+Também é necessário incluir Microsoft.VisualBasic no using 
+
+Ele sempre retorna uma string e os parâmetros respostaPadrao, XPos, YPos são
+opcionais.
+Exemplo:
+string auxiliar = "";
+auxiliar = Interaction.InputBox("Digite o dado", "Entrada de Dados")
+
+
+DateTime dataExemplo = DateTime.Now;   "dd/MM/yyyy:”
