@@ -39,6 +39,7 @@ namespace listaPratica
             txtBseta.Text = "<---";
 
 
+
         }
 
         private void txtBesquerda_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)

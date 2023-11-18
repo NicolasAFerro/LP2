@@ -43,14 +43,7 @@ namespace financeiro
                     break;
                 }
             }
-            /*bool validade=true;
-            if (txtNome.Text.All(char.IsLetter) && txtNome.Text.All(char.IsWhiteSpace))
-            {
-                MessageBox.Show("nome inválido");
-                txtNome.Focus();
-                validade = false;
-
-            }*/
+          
         }
 
         private void Form1_Load(object sender, EventArgs e)
