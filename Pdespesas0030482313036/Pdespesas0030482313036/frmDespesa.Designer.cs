@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDespesa));
             this.bnvDespesa = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
@@ -48,23 +48,24 @@
             this.btnSair = new System.Windows.Forms.ToolStripButton();
             this.tbDespesa = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvDespesa = new System.Windows.Forms.DataGridView();
-            this.dtpData = new System.Windows.Forms.DateTimePicker();
-            this.txtValor = new System.Windows.Forms.TextBox();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtOBS = new System.Windows.Forms.TextBox();
-            this.cbxTipo = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbxTipo = new System.Windows.Forms.ComboBox();
+            this.txtOBS = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.dtpData = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.bnvDespesa)).BeginInit();
             this.bnvDespesa.SuspendLayout();
             this.tbDespesa.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDespesa)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // bnvDespesa
@@ -99,6 +100,13 @@
             this.bnvDespesa.TabIndex = 0;
             this.bnvDespesa.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -132,16 +140,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -164,7 +165,7 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // btnNovo
@@ -175,15 +176,18 @@
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(23, 22);
             this.btnNovo.Text = "Novo";
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
             this.btnSalvar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSalvar.Enabled = false;
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
             this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(23, 22);
             this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnAlterar
             // 
@@ -193,6 +197,7 @@
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(23, 22);
             this.btnAlterar.Text = "alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
             // 
@@ -202,15 +207,18 @@
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(23, 22);
             this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnCancelar.Enabled = false;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(23, 22);
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSair
             // 
@@ -220,138 +228,147 @@
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(23, 22);
             this.btnSair.Text = "sair";
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // tbDespesa
             // 
             this.tbDespesa.Controls.Add(this.tabPage1);
             this.tbDespesa.Controls.Add(this.tabPage2);
-            this.tbDespesa.Location = new System.Drawing.Point(12, 81);
+            this.tbDespesa.Location = new System.Drawing.Point(12, 28);
             this.tbDespesa.Name = "tbDespesa";
             this.tbDespesa.SelectedIndex = 0;
-            this.tbDespesa.Size = new System.Drawing.Size(763, 319);
+            this.tbDespesa.Size = new System.Drawing.Size(763, 370);
             this.tbDespesa.TabIndex = 1;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.cbxTipo);
-            this.tabPage1.Controls.Add(this.txtOBS);
-            this.tabPage1.Controls.Add(this.txtID);
-            this.tabPage1.Controls.Add(this.txtValor);
-            this.tabPage1.Controls.Add(this.dtpData);
             this.tabPage1.Controls.Add(this.dgvDespesa);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(755, 293);
+            this.tabPage1.Size = new System.Drawing.Size(755, 344);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dados";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // dgvDespesa
+            // 
+            this.dgvDespesa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvDespesa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDespesa.Enabled = false;
+            this.dgvDespesa.Location = new System.Drawing.Point(6, 6);
+            this.dgvDespesa.Name = "dgvDespesa";
+            this.dgvDespesa.Size = new System.Drawing.Size(727, 323);
+            this.dgvDespesa.TabIndex = 0;
+            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.cbxTipo);
+            this.tabPage2.Controls.Add(this.txtOBS);
+            this.tabPage2.Controls.Add(this.txtID);
+            this.tabPage2.Controls.Add(this.txtValor);
+            this.tabPage2.Controls.Add(this.dtpData);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(755, 130);
+            this.tabPage2.Size = new System.Drawing.Size(755, 344);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Despesa";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dgvDespesa
+            // label5
             // 
-            this.dgvDespesa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDespesa.Location = new System.Drawing.Point(0, 15);
-            this.dgvDespesa.Name = "dgvDespesa";
-            this.dgvDespesa.Size = new System.Drawing.Size(727, 253);
-            this.dgvDespesa.TabIndex = 0;
-            // 
-            // dtpData
-            // 
-            this.dtpData.CustomFormat = "dd/MM/yyyy";
-            this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpData.Location = new System.Drawing.Point(106, 143);
-            this.dtpData.Name = "dtpData";
-            this.dtpData.Size = new System.Drawing.Size(200, 20);
-            this.dtpData.TabIndex = 1;
-            // 
-            // txtValor
-            // 
-            this.txtValor.Location = new System.Drawing.Point(106, 93);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(200, 20);
-            this.txtValor.TabIndex = 2;
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(106, 42);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(200, 20);
-            this.txtID.TabIndex = 3;
-            // 
-            // txtOBS
-            // 
-            this.txtOBS.Location = new System.Drawing.Point(106, 188);
-            this.txtOBS.Name = "txtOBS";
-            this.txtOBS.Size = new System.Drawing.Size(200, 20);
-            this.txtOBS.TabIndex = 4;
-            // 
-            // cbxTipo
-            // 
-            this.cbxTipo.FormattingEnabled = true;
-            this.cbxTipo.Location = new System.Drawing.Point(106, 225);
-            this.cbxTipo.Name = "cbxTipo";
-            this.cbxTipo.Size = new System.Drawing.Size(200, 21);
-            this.cbxTipo.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "ID";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "VALOR";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 149);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "DATA";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(232, 264);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "TIPO";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 195);
+            this.label4.Location = new System.Drawing.Point(232, 224);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 13);
-            this.label4.TabIndex = 9;
+            this.label4.TabIndex = 19;
             this.label4.Text = "OBSERVAÇÃO";
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 233);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "TIPO";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(232, 176);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "DATA";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(232, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "VALOR";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(232, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "ID";
+            // 
+            // cbxTipo
+            // 
+            this.cbxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxTipo.Enabled = false;
+            this.cbxTipo.FormattingEnabled = true;
+            this.cbxTipo.Location = new System.Drawing.Point(323, 256);
+            this.cbxTipo.Name = "cbxTipo";
+            this.cbxTipo.Size = new System.Drawing.Size(200, 21);
+            this.cbxTipo.TabIndex = 15;
+            // 
+            // txtOBS
+            // 
+            this.txtOBS.Enabled = false;
+            this.txtOBS.Location = new System.Drawing.Point(323, 217);
+            this.txtOBS.Name = "txtOBS";
+            this.txtOBS.Size = new System.Drawing.Size(200, 20);
+            this.txtOBS.TabIndex = 14;
+            // 
+            // txtID
+            // 
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(323, 68);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(200, 20);
+            this.txtID.TabIndex = 13;
+            // 
+            // txtValor
+            // 
+            this.txtValor.Enabled = false;
+            this.txtValor.Location = new System.Drawing.Point(323, 114);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(200, 20);
+            this.txtValor.TabIndex = 12;
+            // 
+            // dtpData
+            // 
+            this.dtpData.CustomFormat = "dd/MM/yyyy";
+            this.dtpData.Enabled = false;
+            this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpData.Location = new System.Drawing.Point(323, 169);
+            this.dtpData.Name = "dtpData";
+            this.dtpData.Size = new System.Drawing.Size(200, 20);
+            this.dtpData.TabIndex = 11;
             // 
             // frmDespesa
             // 
@@ -368,8 +385,9 @@
             this.bnvDespesa.PerformLayout();
             this.tbDespesa.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDespesa)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,9 +414,6 @@
         private System.Windows.Forms.TabControl tbDespesa;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtValor;
-        private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.DataGridView dgvDespesa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -407,5 +422,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbxTipo;
         private System.Windows.Forms.TextBox txtOBS;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.DateTimePicker dtpData;
     }
 }

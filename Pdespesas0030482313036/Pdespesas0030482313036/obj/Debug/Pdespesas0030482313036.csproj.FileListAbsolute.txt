@@ -9,3 +9,15 @@ C:\Users\Nicolas\Documents\fatec\2Semestre\LPII\Pdespesas0030482313036\Pdespesas
 C:\Users\Nicolas\Documents\fatec\2Semestre\LPII\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.exe
 C:\Users\Nicolas\Documents\fatec\2Semestre\LPII\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.pdb
 C:\Users\Nicolas\Documents\fatec\2Semestre\LPII\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.frmDespesa.resources
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\bin\Debug\Pdespesas0030482313036.exe.config
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\bin\Debug\Pdespesas0030482313036.exe
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\bin\Debug\Pdespesas0030482313036.pdb
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.FormPrincipal.resources
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.frmDespesa.resources
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.frmSobre.resources
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.Properties.Resources.resources
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.csproj.GenerateResource.cache
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.exe
+C:\Users\Nicolas\Documents\fatec\LP2\Pdespesas0030482313036\Pdespesas0030482313036\obj\Debug\Pdespesas0030482313036.pdb
