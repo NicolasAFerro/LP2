@@ -1,0 +1,13 @@
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\bin\Debug\FacoQuaseTudo.exe.config
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\bin\Debug\FacoQuaseTudo.exe
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\bin\Debug\FacoQuaseTudo.pdb
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.frmBuscaServico.resources
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.frmCliente.resources
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.Form1.resources
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.Properties.Resources.resources
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.frmServico.resources
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.csproj.GenerateResource.cache
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.exe
+C:\Users\Nicolas\Documents\fatec\FacoQuaseTudo\FacoQuaseTudo\obj\Debug\FacoQuaseTudo.pdb
